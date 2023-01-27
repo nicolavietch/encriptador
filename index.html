@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
     <title>Encriptador</title>
   </head>
   <body>
@@ -27,15 +28,17 @@
         cols="30"
         rows="10"
         placeholder="Ingrese el texto aquí"
+        id="text-input"
       ></textarea>
       <div class="response">
-        <img src="public/Muñeco.png" alt="Muñeco buscando respuestas" />
-        <p class="respuesta">Aqui iria la respuesta</p>
+        <!-- <img src="public/Muñeco.png" alt="Muñeco buscando respuestas" /> -->
+        <!-- <p class="respuesta">Aqui iria la respuesta</p> -->
+        <textarea id="text-output"></textarea>
       </div>
       <div>
         <p>Solo letras minúsculas y sin acentos</p>
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
+        <button onclick="encrypt()">Encriptar</button>
+        <button onclick="decrypt()">Desencriptar</button>
       </div>
     </main>
     <footer>
